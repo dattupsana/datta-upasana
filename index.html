@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>श्री दत्त उपासना | मंत्र, जप, साधना आणि दत्त भक्ती</title>
+<meta name="description" content="श्री दत्त उपासनेसाठी मंत्र, जप काउंटर, साधना, दैनिक आध्यात्मिक संदेश आणि दत्त भक्तीविषयक माहिती एका ठिकाणी.">
+<meta name="keywords" content="श्री दत्त, दत्त उपासना, दत्त मंत्र, गुरुदेव दत्त, दत्त जप, दत्त साधना, दत्तात्रेय मंत्र, गुरुवार दत्त उपासना, मंत्र जप, आध्यात्मिक साधना">
+<meta name="theme-color" content="#0b1736">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="logo"><span class="om">ॐ</span><div><b>श्री दत्त उपासना</b><small>मंत्र • जप • साधना • भक्ती</small></div></div>
+  <nav id="nav" aria-label="मुख्य मेनू">
+    <button data-go="home">मुख्यपृष्ठ</button><button data-go="mantra">मंत्र</button><button data-go="jap">जप</button>
+    <button data-go="sadhana">साधना</button><button data-go="gyan">दत्त ज्ञान</button><button data-go="msg">दैनिक संदेश</button><button data-go="premium">Premium</button>
+  </nav>
+</header>
+<main>
+<section id="home" class="view">
+  <div class="hero"><div class="diya" aria-hidden="true">🪔</div>
+    <h1>श्री दत्तगुरूंच्या भक्तीचा आध्यात्मिक प्रवास</h1>
+    <p>मंत्र, जप, साधना आणि भक्तिमय ज्ञान एका ठिकाणी.</p>
+    <div class="row"><button class="btn" data-go="sadhana">आजची साधना</button><button class="btn ghost" data-go="jap">मंत्र जप सुरू करा</button></div></div>
+  <div class="card"><h2>आजचा आध्यात्मिक संदेश</h2><p class="quote" id="homeMsg"></p><button class="btn small" id="newHome">नवा संदेश</button></div>
+</section>
+
+<section id="mantra" class="view"><h2>मंत्र संग्रह</h2>
+  <input id="search" type="search" placeholder="मंत्र शोधा…" aria-label="मंत्र शोधा">
+  <div id="mantraList"></div></section>
+
+<section id="jap" class="view"><h2>जप काउंटर 📿</h2>
+  <div class="card center"><p id="japName" class="gold"></p>
+    <p>आजचा जप:</p><div class="big" id="count">0</div>
+    <div class="bar"><i id="barFill"></i></div><p id="progTxt"></p>
+    <div class="row"><button class="btn round" id="minus" aria-label="एक कमी">-1</button><button class="btn tap" id="plus" aria-label="एक जोडा">+1</button><button class="btn ghost round" id="reset">Reset</button></div>
+    <div class="row chips" id="targets"></div>
+    <input id="custom" type="number" min="1" placeholder="Custom लक्ष्य" hidden>
+    <p class="done" id="doneMsg" hidden>आजचा जप पूर्ण झाला 🙏<br>श्री गुरुदेव दत्त</p>
+    <p class="small">आजचा एकूण: <b id="todayT">0</b> • एकूण जप: <b id="allT">0</b></p></div>
+  <div class="card center"><h2>जप टायमर</h2><div class="row chips" id="mins"></div>
+    <div class="big" id="clock">10:00</div>
+    <div class="row"><button class="btn" id="tStart">Start</button><button class="btn ghost" id="tPause">Pause</button><button class="btn ghost" id="tReset">Reset</button></div></div></section>
+
+<section id="sadhana" class="view"><h2>साधना</h2><div id="sadList" class="grid"></div>
+  <div class="card"><h2>21 दिवसांची श्री दत्त साधना</h2><p id="p21" class="gold"></p><div class="bar"><i id="bar21"></i></div>
+    <div id="days" class="days"></div><div id="dayBox"></div></div></section>
+
+<section id="gyan" class="view"><h2>दत्त ज्ञान</h2><div id="gyanList"></div></section>
+
+<section id="msg" class="view"><h2>आजचा संदेश</h2>
+  <div class="card center"><p class="quote" id="bigMsg"></p>
+    <div class="row"><button class="btn" id="newMsg">नवा संदेश</button><button class="btn ghost" id="share">Share</button></div></div></section>
+
+<section id="premium" class="view"><div class="card prem"><span class="lock">🔒</span>
+  <h2>विशेष श्री दत्त मंत्र साधना</h2><div class="price">₹99</div>
+  <ul><li>21 दिवसांची सविस्तर साधना</li><li>मंत्र जप पद्धती</li><li>साधना करण्याची तयारी</li><li>वेळ आणि सातत्याचे मार्गदर्शन</li><li>गुरुवार साधना</li><li>प्रार्थना</li><li>साधनेतील सामान्य चुका</li><li>PDF-style detailed guidance</li></ul>
+  <p class="small">ही आध्यात्मिक/भक्तीपर माहिती आहे. निश्चित चमत्कार, आर्थिक लाभ, आरोग्यलाभ किंवा इतर हमीचे दावे केलेले नाहीत.</p>
+  <button class="btn" id="buy">₹99 मध्ये Premium साधना मिळवा</button><p id="buyMsg" class="gold"></p></div></section>
+
+<section id="contact" class="view"><h2>संपर्क</h2><div class="card">
+  <input id="cn" placeholder="नाव" aria-label="नाव"><input id="ce" type="email" placeholder="Email" aria-label="Email"><textarea id="cm" rows="4" placeholder="संदेश" aria-label="संदेश"></textarea>
+  <button class="btn" id="send">पाठवा</button><p id="sendMsg" class="gold"></p></div></section>
+</main>
+
+<footer><b>श्री दत्त उपासना</b> 🙏
+  <div class="row"><button class="link" data-page="about">About</button><button class="link" data-page="disclaimer">Disclaimer</button><button class="link" data-page="privacy">Privacy Policy</button><button class="link" data-go="contact">Contact</button></div></footer>
+
+<dialog id="dlg"><div id="dlgBody"></div><button class="btn" id="dlgClose">बंद करा</button></dialog>
+<script src="script.js"></script>
+</body>
+</html>
